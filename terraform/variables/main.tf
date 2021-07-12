@@ -55,6 +55,12 @@ variable "myObject"{
 	}
 }
 
+locals {
+	setup_name = "test"
+	foobar = upper("will")
+
+}
+
 
 
 provider "aws"{
@@ -68,15 +74,29 @@ resource "aws_vpc" "myVPC" {
 	#cidr_block = "10.10.10.0/24"
 	cidr_block = "10.0.0.0/16"
 	tags = {
-		Name = var.myStrVar
+		#Name = var.myStrVar
 		#Name = var.myInputVar
+		Name = "${local.setup_name}-vpc"
+		foo = local.setup_name
+		bar = local.foobar
 		elem = var.myStrList[0]
 		elem_1 = var.myMapVar["Key1"]
 
 	}
+}
+
+resource "aws_instance" "myEC2" {
+        ami = "ami-0c9fe0dec6325a30c"
+        instance_type = "t2.micro"
+	tags = {
+		Name = "${local.setup_name}-ec2"
+		foo = local.setup_name
+		bar = local.foobar
+	}
 
 
 }
+
 
 
 output "myOutput"{
