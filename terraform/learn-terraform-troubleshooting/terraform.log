@@ -1,0 +1,37 @@
+2021-07-12T15:04:10.002Z [DEBUG] Adding temp file log sink: /tmp/terraform-log920922064
+2021-07-12T15:04:10.005Z [INFO]  Terraform version: 1.0.2
+2021-07-12T15:04:10.005Z [INFO]  Go runtime version: go1.16.4
+2021-07-12T15:04:10.005Z [INFO]  CLI args: []string{"/usr/bin/terraform", "form"}
+2021-07-12T15:04:10.005Z [TRACE] Stdout is a terminal of width 93
+2021-07-12T15:04:10.005Z [TRACE] Stderr is a terminal of width 93
+2021-07-12T15:04:10.005Z [TRACE] Stdin is a terminal
+2021-07-12T15:04:10.005Z [DEBUG] Attempting to open CLI config file: /home/hugo/.terraformrc
+2021-07-12T15:04:10.005Z [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2021-07-12T15:04:10.005Z [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2021-07-12T15:04:10.005Z [DEBUG] ignoring non-existing provider search directory /home/hugo/.terraform.d/plugins
+2021-07-12T15:04:10.005Z [DEBUG] ignoring non-existing provider search directory /home/hugo/.local/share/terraform/plugins
+2021-07-12T15:04:10.005Z [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2021-07-12T15:04:10.005Z [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2021-07-12T15:04:10.005Z [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2021-07-12T15:04:10.007Z [INFO]  CLI command args: []string{"form"}
+2021-07-12T15:04:14.707Z [DEBUG] Adding temp file log sink: /tmp/terraform-log184143574
+2021-07-12T15:04:14.707Z [INFO]  Terraform version: 1.0.2
+2021-07-12T15:04:14.707Z [INFO]  Go runtime version: go1.16.4
+2021-07-12T15:04:14.707Z [INFO]  CLI args: []string{"/usr/bin/terraform", "fmt"}
+2021-07-12T15:04:14.707Z [TRACE] Stdout is a terminal of width 93
+2021-07-12T15:04:14.707Z [TRACE] Stderr is a terminal of width 93
+2021-07-12T15:04:14.707Z [TRACE] Stdin is a terminal
+2021-07-12T15:04:14.707Z [DEBUG] Attempting to open CLI config file: /home/hugo/.terraformrc
+2021-07-12T15:04:14.707Z [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2021-07-12T15:04:14.707Z [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2021-07-12T15:04:14.707Z [DEBUG] ignoring non-existing provider search directory /home/hugo/.terraform.d/plugins
+2021-07-12T15:04:14.707Z [DEBUG] ignoring non-existing provider search directory /home/hugo/.local/share/terraform/plugins
+2021-07-12T15:04:14.707Z [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2021-07-12T15:04:14.707Z [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2021-07-12T15:04:14.707Z [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2021-07-12T15:04:14.707Z [INFO]  CLI command args: []string{"fmt"}
+2021-07-12T15:04:14.707Z [TRACE] terraform fmt: looking for files in .
+2021-07-12T15:04:14.707Z [TRACE] terraform fmt: Formatting main.tf
+2021-07-12T15:04:14.708Z [TRACE] terraform fmt: Formatting outputs.tf
+2021-07-12T15:04:14.709Z [TRACE] terraform fmt: Formatting terraform.tfvars
+2021-07-12T15:04:14.710Z [TRACE] terraform fmt: Formatting variables.tf
