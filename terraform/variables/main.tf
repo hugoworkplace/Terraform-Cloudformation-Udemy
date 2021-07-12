@@ -1,8 +1,15 @@
 variable "myStrVar" {
 	type = string
-	default = "my-frist-vpc"
+	default = "my-frist"
 
 }
+
+/* substitution not working for variable
+variable "testVar" {
+	type = string
+	default = "${var.myStrVar}-Test"
+}
+*/
 
 variable "myNumVar"{
 	type = number
@@ -56,8 +63,9 @@ variable "myObject"{
 }
 
 locals {
-	setup_name = "test"
+	setup_name = "${var.myStrVar}-${var.myNumVar}"
 	foobar = upper("will")
+
 
 }
 
@@ -75,8 +83,8 @@ resource "aws_vpc" "myVPC" {
 	cidr_block = "10.0.0.0/16"
 	tags = {
 		#Name = var.myStrVar
-		#Name = var.myInputVar
-		Name = "${local.setup_name}-vpc"
+		Name = "${var.myInputVar}-vpc"
+		#Name = "${local.setup_name}-vpc"
 		foo = local.setup_name
 		bar = local.foobar
 		elem = var.myStrList[0]
@@ -85,6 +93,7 @@ resource "aws_vpc" "myVPC" {
 	}
 }
 
+/*
 resource "aws_instance" "myEC2" {
         ami = "ami-0c9fe0dec6325a30c"
         instance_type = "t2.micro"
@@ -93,10 +102,8 @@ resource "aws_instance" "myEC2" {
 		foo = local.setup_name
 		bar = local.foobar
 	}
-
-
 }
-
+*/
 
 
 output "myOutput"{
